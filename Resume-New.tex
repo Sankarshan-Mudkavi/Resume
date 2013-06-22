@@ -1,138 +1,153 @@
-\documentclass[10pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\documentclass[10pt, oneside]{article}   													% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage [top = 1 cm, bottom = 2 cm, headsep = 0 pt, headheight = 0 pt] {geometry}                		% See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
-%\geometry{landscape}                		% Activate for for rotated page geometry
-%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
-\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
-\usepackage{enumitem}								% TeX will automatically convert eps --> pdf in pdflatex		
+\geometry{letterpaper}                   														% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                														% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    														% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}																% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+\usepackage{enumitem}																% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
 \usepackage{titling}
 
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 
-\newcommand{\myrule} [3] []{
-    %\begin{center}
-        \begin{tikzpicture}
-            \draw[#2-#3, ultra thick, #1] (0,0) to (0.5\linewidth,0); \draw[#2-#3,ultra thick, #1](0.5\linewidth,0)  to (\linewidth,0);
-        \end{tikzpicture}
-    %\end{center}
+\pagenumbering{gobble}
+
+\newcommand{\myrule} [3] []
+{
+       	\begin{tikzpicture}
+		 \draw[#2-#3, ultra thick, #1] (0,0) to (0.5\linewidth,0);
+		  \draw[#2-#3,ultra thick, #1](0.5\linewidth,0)  to (\linewidth,0);
+	 \end{tikzpicture}
 }
     
 \setlength{\droptitle}{-3em}
-\title{\LARGE{\bf Sankarshan Mudkavi}}
-\posttitle{\par \vspace{1 pt}\large{sankarshan.mudkavi@gmail.com} \myrule[line width = 0.75mm]{fast cap reversed}{fast cap reversed}\end{center}\emph{https://github.com/Sankarshan-Mudkavi}\hfill(226) 600-6809\vspace{-4em}}
-\pagenumbering{gobble}
-\date{}					% Activate to display a given date or no date
+
+\title
+{
+	\LARGE{\bf Sankarshan Mudkavi}
+}
+\posttitle
+{
+	\par \vspace{1 pt} 
+	\large{sankarshan.mudkavi@gmail.com} 
+	\myrule[line width = 0.75mm] {fast cap reversed} {fast cap reversed}
+	\end{center}
+	\emph{https://github.com/Sankarshan-Mudkavi} \hfill (226) 600-6809
+	\vspace{-4em}
+}
+
+\date{}
 \begin{document}
 \maketitle
 
-\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
-\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+\newcommand{\CC}
+{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf+}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf+}}\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf++}}}
 
 
 \section*{\large{Summary of Qualifications} \vspace{1.25 pt} \hrule height 0.5pt}
-\vspace{ -0.05 in}
-\begin{itemize}
-\item
-{\bf \CC}\hspace{1 pt}: Personal projects, high school courses, workplace
-\vspace{-0.05 in}
-\item
-{\bf Python}: Online coursework, personal projects, workplace
-\vspace{-0.05 in}
-\item
-{\bf Java}: High school courses
-\vspace{-0.05 in}
-\item
-{\bf Ruby, JavaScript, HTML, CSS, MySQL} and {\bf \LaTeX}: Basic functionality
-\end{itemize}
+	\vspace{ -0.05 in}
+	\begin{itemize}
+		\item
+		{\bf \CC}\hspace{2 pt}: Personal projects, high school courses, workplace
+		\vspace{-0.05 in}
+		\item
+		{\bf Python}: Online coursework, personal projects, workplace
+		\vspace{-0.05 in}
+		\item
+		{\bf Java}: High school courses
+		\vspace{-0.05 in}
+		\item
+		{\bf Ruby, JavaScript, HTML, CSS, MySQL} and {\bf \LaTeX}: Basic functionality
+	\end{itemize}
+	\vspace{ -0.1 in}
 
 \section*{\large{Personal Projects}\vspace{1.25 pt}\hrule height 0.5 pt}
-\vspace{ -0.05 in}
-\begin{itemize}
-\item
-{\bf Ballstorm}: Built an interactive graphical game with a physics engine using the \CC \hspace{3 pt}allegro library
-\vspace{-0.05 in}
-\item
-{\bf CloG}: Built a basic web blog using Google AppEngine as a back-end framework as part of CS 253
-\vspace{-0.05 in}
-\item
-{\bf DuckDuckShogi}: Built a rudimentary functional search engine as part of CS 101
-\vspace{-0.05 in}
-\item
-{\bf PrQL}: Built a basic database management system with SQL-like functionality in \CC
-\vspace{-0.05 in}
-\item
-Built basic code that implemented algorithms used in robotic vehicles as part of CS 373
-\vspace{-0.05 in}
-\item
-Solved over 50 problems on Project Euler with python implementations
-\end{itemize}
-\vspace{ -0.1 in}
+	\vspace{ -0.05 in}
+	\begin{itemize}
+		\item
+		{\bf Ballstorm}: Built an interactive graphical game with a physics engine using the \CC\hspace{2 pt}allegro library
+		\vspace{-0.05 in}
+		\item
+		{\bf CloG}: Built a basic web blog using Google AppEngine as a back-end framework as part of CS 253
+		\vspace{-0.05 in}
+		\item
+		{\bf DuckDuckShogi}: Built a rudimentary functional search engine as part of CS 101
+		\vspace{-0.05 in}
+		\item
+		{\bf PrQL}: Built a basic database management system with SQL-like functionality in \CC
+		\vspace{-0.05 in}
+		\item
+		Built basic code that implemented algorithms used in robotic vehicles as part of CS 373
+		\vspace{-0.05 in}
+		\item
+		Solved over 50 problems on Project Euler with python implementations
+	\end{itemize}
+	\vspace{ -0.1 in}
 
 \section*{\large{Work Experience}\vspace{1.25 pt} \hrule height 0.5pt}
-\vspace{ -0.05 in}
-{\bf Research Intern, Syracuse University \hfill May - August, 2013}
-\vspace{ -0.05 in}
-\begin{itemize}
-\item
-Conducting research on evolutionary algorithms with applications to multi-objective optimization in wireless sensor clusters
-\vspace{-0.05 in}
-\item
-Modifying existing evolutionary algorithms to increase efficiency based on problem specifications
-\vspace{-0.05 in}
-\item
-Analysis of behavioral patterns to detect deviations by training sensor networks using obtained data
-\vspace{-0.05 in} 
-\item
-Modeling of mobility and tracking within sensor clusters
-\end{itemize}
-\vspace{-0.1 in}
+	\vspace{ -0.05 in}
+	{\bf Research Intern, Syracuse University \hfill May - August, 2013}
+	\vspace{ -0.05 in}
+	\begin{itemize}
+		\item
+		Conducting research on evolutionary algorithms with applications to multi-objective optimization in wireless sensor clusters
+		\vspace{-0.05 in}
+		\item
+		Modifying existing evolutionary algorithms to increase efficiency based on problem specifications
+		\vspace{-0.05 in}
+		\item
+		Analysis of behavioral patterns to detect deviations by training sensor networks using obtained data
+		\vspace{-0.05 in} 
+		\item
+		Modeling of mobility and tracking within sensor clusters
+	\end{itemize}
+	\vspace{-0.1 in}
 
 \section*{\large{Education} \vspace{1.25 pt}\hrule height 0.5pt}
-\vspace{ -0.05 in}
-\subsection*{\normalsize{Candidate for Bachelor of Science \hfill 2012 - 2017}}
-\vspace{-0.05 in}
-\begin{itemize}
-\item
-Honours Co-operative Physics, University of Waterloo
-\end{itemize}
-\vspace{ -0.1 in}
+	\vspace{ -0.05 in}
+	\subsection*{\normalsize{Candidate for Bachelor of Science \hfill 2012 - 2017}}
+		\vspace{-0.05 in}
+		\begin{itemize}
+			\item
+			Honours Co-operative Physics, University of Waterloo
+		\end{itemize}
+	\vspace{ -0.1 in}
 
-\subsection*{\normalsize{Applicable coursework}}
-\vspace{-0.05 in}
-\begin{itemize}
-\item
-CS 101: Introduction to Computer Science (Udacity)
-\vspace{-0.05 in}
-\item
-CS 373: Programming a Robotic Car (Udacity)
-\vspace{-0.05 in}
-\item
-CS 253: Web Application Engineering (Udacity)
-\vspace{-0.05 in}
-\item
-CS 221: Introduction to artificial Intelligence (Udacity) - In progress
-\vspace{-0.05 in}
-\item
-CS 212: Design of computer programs (Udacity) - In progress
-\vspace{-0.05 in}
-\item
-CS 215: Algorithms (Udacity) - In progress
-\vspace{-0.05 in}
-\item
-CS 191x: Quantum Computation (Berkeley, edX) - In progress
-\end{itemize}
-\vspace{ -0.1 in}
+	\subsection*{\normalsize{Applicable coursework}}
+		\vspace{-0.05 in}
+		\begin{itemize}
+			\item
+			CS 101: Introduction to Computer Science (Udacity)
+			\vspace{-0.05 in}
+			\item
+			CS 373: Programming a Robotic Car (Udacity)
+			\vspace{-0.05 in}
+			\item
+			CS 253: Web Application Engineering (Udacity)
+			\vspace{-0.05 in}
+			\item
+			CS 221: Introduction to artificial Intelligence (Udacity) - In progress
+			\vspace{-0.05 in}
+			\item
+			CS 212: Design of computer programs (Udacity) - In progress
+			\vspace{-0.05 in}
+			\item
+			CS 215: Algorithms (Udacity) - In progress
+			\vspace{-0.05 in}
+			\item
+			CS 191x: Quantum Computation (Berkeley, edX) - In progress
+		\end{itemize}
+		\vspace{ -0.1 in}
 
 \subsection*{\normalsize{Awards}}
-\vspace{-0.05 in}
-\begin{itemize}
-\item
-University of Waterloo President's scholarship  \hspace{2.46 in} 2012
-\vspace{-0.2 in}
-\item
-Indian National Mathematics Olympiad Scholar \hfill 2011
-\end{itemize}
+		\vspace{-0.05 in}
+	\begin{itemize}
+		\item
+		University of Waterloo President's scholarship  \hspace{2.46 in} 2012
+		\vspace{-0.2 in}
+		\item
+		Indian National Mathematics Olympiad Scholar \hfill 2011
+	\end{itemize}
 
 \end{document}  
